@@ -286,7 +286,7 @@ sudo systemctl enable docker.somo
 sudo systemctl daemon-reload
 
 echo -e "[ \e[33mSOMO\e[39m ] Register somo command"
-wget -O /tmp/somo "https://raw.githubusercontent.com/didiatworkz/screenly-ose-monitoring/$_BRANCH/assets/tools/somo"
+wget -O /tmp/somo "https://github.com/vuvanbac1997/screenly-ose-monitoring/blob/master/assets/tools/somo"
 sudo cp -f /tmp/somo /usr/bin/somo
 sudo chmod 755 /usr/bin/somo
 

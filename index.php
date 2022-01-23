@@ -21,7 +21,7 @@ echo'
 		<link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#2f3949">
 		<link rel="shortcut icon" href="assets/img/fav/favicon.ico">
 		<meta name="msapplication-TileColor" content="#f5f7fb">
-		<meta name="msapplication-config" content="assets/img/fav/browserconfig.xml">
+		// <meta name="msapplication-config" content="assets/img/fav/browserconfig.xml">
 		<meta name="theme-color" content="#f5f7fb">
     <!-- Libs CSS -->
     <link href="assets/libs/selectize/dist/css/selectize.css?t='.$set['updatecheck'].'" rel="stylesheet"/>
@@ -323,14 +323,10 @@ echo'
 				<div class="row text-center align-items-center flex-row-reverse">';
 				if(!(isset($_GET['monitoring']) OR !$loggedIn)) echo '
 					<div class="col-lg-auto ml-lg-auto">
-						<ul class="list-inline list-inline-dots mb-0">
-							<li class="list-inline-item"><a href="https://www.github.com/didiatworkz" target="_blank" class="link-secondary">Github</a></li>
-							<li class="list-inline-item"><a href="javascript:void(0)" data-toggle="modal" data-target="#info" class="link-secondary">'.Translation::of('information').'</a></li>
-							</ul>
 					</div>';
 					echo'<div class="col-12 col-lg-auto mt-3 mt-lg-0">';
 						if(isset($pagination)) echo $pagination; echo '
-						&copy; '.date('Y').' by <a href="https://www.atworkz.de" target="_blank">atworkz.de</a>
+						&copy; '.date('Y').' by Hinori
 					</div>
 				</div>
 			</div>

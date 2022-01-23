@@ -15,7 +15,7 @@ class Translation
      * The default language to use if the client language or the forced language locales are not found.
      * @type string
      */
-    protected static $defaultLanguage = 'en-US';
+    protected static $defaultLanguage = 'vi-VI';
 
     /**
      * Array where loaded locales will be kept to avoid the need of reload the locale file.

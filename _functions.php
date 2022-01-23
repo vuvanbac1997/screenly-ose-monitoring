@@ -72,7 +72,7 @@ $uploadMaxSize 	= $set['uploadMaxSize'];
 $_cryptKey 			= str_replace('.db', '', $db_cryproKey);
 
 if($set['name'] != 'SOMO'){
-	define('_SYSTEM_NAME', $set['name'].' - SOMO');
+	define('_SYSTEM_NAME', 'HINORI');
 }
 else define('_SYSTEM_NAME', $set['name']);
 
