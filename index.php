@@ -14,14 +14,14 @@ echo'
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>'._SYSTEM_NAME.'</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
-		<link rel="manifest" href="assets/img/fav/site.webmanifest">
-		<link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#2f3949">
-		<link rel="shortcut icon" href="assets/img/fav/favicon.ico">
+		// <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
+		// <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
+		// <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
+		// <link rel="manifest" href="assets/img/fav/site.webmanifest">
+		// <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#2f3949">
+		// <link rel="shortcut icon" href="assets/img/fav/favicon.ico">
 		<meta name="msapplication-TileColor" content="#f5f7fb">
-		// <meta name="msapplication-config" content="assets/img/fav/browserconfig.xml">
+		<meta name="msapplication-config" content="assets/img/fav/browserconfig.xml">
 		<meta name="theme-color" content="#f5f7fb">
     <!-- Libs CSS -->
     <link href="assets/libs/selectize/dist/css/selectize.css?t='.$set['updatecheck'].'" rel="stylesheet"/>
@@ -241,46 +241,46 @@ echo'
 		        <h5 class="modal-title">'._SYSTEM_NAME.'</h5>
 		      </div>
 					<div class="modal-body">
-					  <a href="https://atworkz.de" target="_blank"><img src="assets/img/atworkz-logo.png" alt="atworkz" class="img-fluid mx-auto d-block" /></a>
-						<table class="table table-sm">
-						  <tr>
-						    <td>'.Translation::of('monitor_version').':</td>
-						    <td>'.$systemVersion.'</td>
-						  </tr>
-							<tr>
-						    <td>'.Translation::of('screenly_api').':</td>
-						    <td>'.$apiVersion.'</td>
-						  </tr>
-							<tr>
-						    <td>&nbsp;</td>
-						    <td>'.(isAdmin($loginUserID) ? '<a href="index.php?site=settings&view=system">'.strtolower(Translation::of('more_information')).'</a>' : '&nbsp;').'</td>
-						  </tr>
-						  <tr>
-						    <td>'.Translation::of('project').':</td>
-						    <td><a href="https://github.com/didiatworkz/screenly-ose-monitoring" target="_blank">GitHub</a></td>
-						  </tr>
-							<tr>
-						    <td>'.Translation::of('copyright').':</td>
-						    <td><a href="https://atworkz.de" target="_blank">atworkz.de</a></td>
-						  </tr>
-						  <tr>
-						    <td>'.Translation::of('design').':</td>
-						    <td>
-									<a href="https://github.com/tabler/tabler/" target="_blank">tabler</a><br />
-									<a href="https://undraw.co/" target="_blank">undraw illustrations</a>
-								</td>
-						  </tr>
-						  <tr>
-						    <td>'.Translation::of('scripts').':</td>
-						    <td>
-							  <a href="https://datatables.net" target="_blank">DataTables</a><br />
-							  <a href="https://www.dropzonejs.com/" target="_blank">dropzoneJS</a><br />
-							  <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">Bootstrap notify</a><br />
-							  <a href="https://github.com/InterativaDigital/php-translation-class" target="_blank">PHP Translation Class</a><br />
-							  <a href="https://github.com/members/ssh" target="_blank">SSH Client Class</a><br />
-							</td>
-						  </tr>
-						</table>
+					//   <a href="https://atworkz.de" target="_blank"><img src="assets/img/atworkz-logo.png" alt="atworkz" class="img-fluid mx-auto d-block" /></a>
+					// 	<table class="table table-sm">
+					// 	  <tr>
+					// 	    <td>'.Translation::of('monitor_version').':</td>
+					// 	    <td>'.$systemVersion.'</td>
+					// 	  </tr>
+					// 		<tr>
+					// 	    <td>'.Translation::of('screenly_api').':</td>
+					// 	    <td>'.$apiVersion.'</td>
+					// 	  </tr>
+					// 		<tr>
+					// 	    <td>&nbsp;</td>
+					// 	    <td>'.(isAdmin($loginUserID) ? '<a href="index.php?site=settings&view=system">'.strtolower(Translation::of('more_information')).'</a>' : '&nbsp;').'</td>
+					// 	  </tr>
+					// 	  <tr>
+					// 	    <td>'.Translation::of('project').':</td>
+					// 	    <td><a href="https://github.com/didiatworkz/screenly-ose-monitoring" target="_blank">GitHub</a></td>
+					// 	  </tr>
+					// 		<tr>
+					// 	    <td>'.Translation::of('copyright').':</td>
+					// 	    <td><a href="https://atworkz.de" target="_blank">atworkz.de</a></td>
+					// 	  </tr>
+					// 	  <tr>
+					// 	    <td>'.Translation::of('design').':</td>
+					// 	    <td>
+					// 				<a href="https://github.com/tabler/tabler/" target="_blank">tabler</a><br />
+					// 				<a href="https://undraw.co/" target="_blank">undraw illustrations</a>
+					// 			</td>
+					// 	  </tr>
+					// 	  <tr>
+					// 	    <td>'.Translation::of('scripts').':</td>
+					// 	    <td>
+					// 		  <a href="https://datatables.net" target="_blank">DataTables</a><br />
+					// 		  <a href="https://www.dropzonejs.com/" target="_blank">dropzoneJS</a><br />
+					// 		  <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">Bootstrap notify</a><br />
+					// 		  <a href="https://github.com/InterativaDigital/php-translation-class" target="_blank">PHP Translation Class</a><br />
+					// 		  <a href="https://github.com/members/ssh" target="_blank">SSH Client Class</a><br />
+					// 		</td>
+					// 	  </tr>
+					// 	</table>
 	        </div>
 					<div class="modal-footer">
             <button type="button" class="btn btn-secondary pull-right" data-dismiss="modal">'.Translation::of('close').'</button>

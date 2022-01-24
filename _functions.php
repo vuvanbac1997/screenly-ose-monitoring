@@ -71,10 +71,7 @@ $runnerTime 		= getRunnerTime();
 $uploadMaxSize 	= $set['uploadMaxSize'];
 $_cryptKey 			= str_replace('.db', '', $db_cryproKey);
 
-if($set['name'] != 'SOMO'){
-	define('_SYSTEM_NAME', 'HINORI');
-}
-else define('_SYSTEM_NAME', $set['name']);
+define('_SYSTEM_NAME', 'HINORI');
 
 if($set['design'] == 1) $body_theme = ' theme-dark';
 else $body_theme = '';

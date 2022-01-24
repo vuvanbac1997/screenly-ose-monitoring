@@ -113,15 +113,15 @@ else {
         <div class="row align-items-center">
           <div class="col-auto">
             <h2 class="page-title">
-              '.Translation::of('soma').' [BETA]
+              '.Translation::of('soma').'
             </h2>
           </div>
-          <div class="col-auto ml-auto">
-              <a href="#" data-toggle="modal" data-target="#manual_install" class="btn btn-info">
-                '.Translation::of('manual_installation').'
-              </a>
+          // <div class="col-auto ml-auto">
+          //     <a href="#" data-toggle="modal" data-target="#manual_install" class="btn btn-info">
+          //       '.Translation::of('manual_installation').'
+          //     </a>
 
-          </div>
+          // </div>
         </div>
       </div>
       <div class="row">
