@@ -137,3 +137,7 @@ Thanks for using this project! <br />
 <p align="center">
 <img width="128px" title="atworkz logo" alt="atworkz logo" src="https://assets.atworkz.de/img/atworkz_logo_512.png" />
 </p>
+
+docker build -t screenly-monitor -f Dockerfile .
+docker run -d --name screenly-monitor -v /Users/trannam/Workspace/Outsources/screenly-ose-monitoring:/var/www/html -p 80:80 -e "UID=$(id -u)" -e "GID=$(id -g)" -e "HOST_IP=localhost" -e "HOST_PORT=80" screenly-monitor
+
