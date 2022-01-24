@@ -139,5 +139,6 @@ Thanks for using this project! <br />
 </p>
 
 docker build -t screenly-monitor -f Dockerfile .
-docker run -d --name screenly-monitor -v /Users/trannam/Workspace/Outsources/screenly-ose-monitoring:/var/www/html -p 80:80 -e "UID=$(id -u)" -e "GID=$(id -g)" -e "HOST_IP=localhost" -e "HOST_PORT=80" screenly-monitor
+docker run -d --name screenly-monitor -v /home/admin/screenly-ose-monitoring:/var/www/html -p 80:80 -e "UID=$(id -u)" -e "GID=$(id -g)" -e "HOST_IP=localhost" -e "HOST_PORT=80" screenly-monitor
+docker restart <container id>
 
