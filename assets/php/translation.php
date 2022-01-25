@@ -27,7 +27,7 @@ class Translation
      * The current language being used to translate.
      * @type string
      */
-    protected static $currentLanguage = '';
+    protected static $currentLanguage = 'vi-VI';
 
     /**
      * Determine whether the class has been initialized.
